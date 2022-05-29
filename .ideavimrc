@@ -1,0 +1,24 @@
+imap jk <Esc>
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+set scrolloff=5
+set keep-english-in-normal-and-restore-in-insert
+set number relativenumber
+
+" 上下移动选中文本
+vnoremap <J> :m '>+1<CR>gv=gv
+vnoremap <K> :m '>+1<CR>gv=gv
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+map <C-v> <C-W>v
+map <C-s> <C-W>s
+map <C-t> <C-W>t
+map <C-+> <C-W>+
+map <C--> <C-W>-
+
+nnoremap <C-p> :action PreviousTab<CR>
+nnoremap <C-n> :action NextTab<CR>
